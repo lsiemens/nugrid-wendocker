@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 Maintainer Samuel Jones
 
-# Build: docker build -t docker-ipython-notebook-nugrid:<VERSION> .
-# Run:   docker run --privileged=true -d -p 8080:8080 --name ipython docker-ipython-notebook-nugrid:<VERSION> 
+# Build: docker build -t nugrid-wendocker:<VERSION> .
+# Run:   docker run --privileged=true -d -p 8080:8080 --name ipython nugrid-wendocker:<VERSION> 
 
 RUN apt-get update; \
   DEBIAN_FRONTEND=noninteractive apt-get --no-install-recommends install --yes \
