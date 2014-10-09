@@ -32,7 +32,7 @@ The container requires the VOSpace volume to be connected at runtime, either fro
 
 1. Build the app docker:
 
-    docker built -t nugrid-notebook:0.1 public-notebook
+    docker build -t nugrid-notebook:0.1 public-notebook
 
 2. Run the app docker:
 
