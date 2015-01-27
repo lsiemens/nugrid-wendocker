@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in $(docker ps -a | grep Exited | grep -Eo '^[^ ]+'); do
+    sudo /home/nugrid/jiffylab/webapp/fc_SJ.py $i
+    docker rm $i
+done
