@@ -44,11 +44,19 @@ The current alternative is the following recipe, assuming the Docker host (In ou
 
 1. Mount Nugrid VOSpace on the host:
 
-   mkdir /vos_nugrid
+   mkdir /vos\_nugrid
    
-   vos-readonly/mount-nugrid-vos.bash /vos_nugrid
+   vos-readonly/mount-nugrid-vos.bash /vos\_nugrid
 
 2. Run the app docker:
 
-   docker run --volume /vos_nugrid:/home/nugrid/CADC/NuGrid -p 80:8080 --name nugrid-notebook nugrid-notebook:0.1
+   docker run --volume /vos\_nugrid:/home/nugrid/CADC/NuGrid -p 80:8080 --name nugrid-notebook nugrid-notebook:0.1
+
+## Host-tools
+
+This directory contains the files and information needed to set up a host machine to
+manage the docker containers for both public and CANFAR-authenticated users. The host
+machine creates, starts, stops and removes containers automatically, connecting
+users to their personal container/notebook session on request.
+
 
