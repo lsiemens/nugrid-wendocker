@@ -40,5 +40,6 @@ else
     mkdir /CADC/vosCache /CADC/NuGrid
 fi
 
-mountvofs --readonly --log=./CADC/vos_log --cache_nodes --cache_dir=./CADC/vosCache --mountpoint=./CADC/NuGrid --vospace=vos:nugrid
+
+mountvofs --readonly --log=/CADC/vos_log --cache_nodes --cache_dir=/CADC/vosCache --mountpoint=/CADC/NuGrid --vospace=vos:nugrid
 ipython notebook --no-browser --ip=0.0.0.0 --port=8080 --notebook-dir=/tmp/notebook/${GIT_REPO/*\/}/${REPO_DIR}
