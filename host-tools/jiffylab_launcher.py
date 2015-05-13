@@ -241,7 +241,7 @@ def get_or_make_container(email,vospace_token='',username=''): # SJ added vospac
         # if the container is not currently running, restart it
         check_memory()
         docker_client.start(container_id, publish_all_ports=True,
-            binds={"/home/nugrid/CADC/NuGrid":"/home/nugrid/CADC/NuGrid" # SJ
+            binds={"/mnt/CADC/NuGrid/data":"/home/nugrid/CADC/NuGrid" # SJ
                 })                                                       # SJ
         # refresh status
         container = get_container(container_id)
