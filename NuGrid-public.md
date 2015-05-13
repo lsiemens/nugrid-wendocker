@@ -23,6 +23,7 @@ The current alternative is the following recipe, assuming the Docker host has th
 1. Mount Nugrid VOSpace on the host:
 
    mkdir /vos_nugrid
+   
    vos-readonly/mount-nugrid-vos.bash /vos_nugrid
 
 2. Run the app docker:
