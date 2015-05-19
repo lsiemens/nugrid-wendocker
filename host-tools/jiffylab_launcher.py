@@ -43,8 +43,10 @@ SERVICES_HOST = '127.0.0.1'
 #BASE_IMAGE_TAG = 'latest'              # SJ
 #BASE_IMAGE = 'timeout-public-notebook'  # SJ
 #BASE_IMAGE_TAG = '1.0'                  # SJ
-BASE_IMAGE = 'nugrid-notebook'           # SJ
-BASE_IMAGE_TAG = 'base'                  # SJ
+#BASE_IMAGE = 'nugrid-notebook'           # SJ
+#BASE_IMAGE_TAG = 'base'                  # SJ
+BASE_IMAGE = 'swjones/nugrid-notebook'           # SJ
+BASE_IMAGE_TAG = 'latest'                  # SJ
 
 
 # or can use available for vm
