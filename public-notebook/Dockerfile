@@ -20,6 +20,7 @@ RUN pip install --upgrade matplotlib && \
     apt-get remove --yes libsndfile-dev python-dev build-essential && \
     apt-get autoremove --yes && \
     apt-get autoclean --yes && \
+    pip install --upgrade requests && \
     pip install --upgrade nugridpy vos && \
     pip install https://github.com/jakevdp/JSAnimation/archive/master.zip && \
     pip install xlrd
