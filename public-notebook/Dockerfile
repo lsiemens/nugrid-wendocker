@@ -20,6 +20,7 @@ RUN pip install --upgrade matplotlib && \
     apt-get remove --yes libsndfile-dev python-dev build-essential && \
     apt-get autoremove --yes && \
     apt-get autoclean --yes && \
+    pip install --upgrade requests && \
     pip install --upgrade nugridpy vos && \
     pip install https://github.com/jakevdp/JSAnimation/archive/master.zip && \
     pip install xlrd
@@ -49,7 +50,7 @@ RUN  chmod +x /home/nugrid/run-ipython-notebook.bash && \
 USER nugrid
 ENV HOME /home/nugrid
 RUN ipython profile create nbserver
-ADD startup.ipy /home/nugrid/.ipython/profile_nbserver/startup/startup.ipy
+# startup.ipy moved to https://github.com/NuGrid/WENDI/
 ADD nb_tools.py /home/nugrid/.ipython/profile_nbserver/startup/nb_tools.py
 WORKDIR /home/nugrid
 CMD timeout 43200 /home/nugrid/run-ipython-notebook.bash # 12 hours
