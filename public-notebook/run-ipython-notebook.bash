@@ -1,7 +1,7 @@
 #!/bin/bash
 export PYTHONPATH=/home/nugrid
 
-IPN_URL="https://github.com/NuGrid/WENDI.git"
+IPN_URL="https://github.com/NuGrid/WENDI_dev.git"
 IP_PROFILE="/home/nugrid/.ipython/profile_nbserver"
 IPN_LOCAL="/home/nugrid/nugridnotebooks"
 IPN_DIR="${IPN_LOCAL}/notebooks"
