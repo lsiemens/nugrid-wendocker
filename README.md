@@ -1,6 +1,8 @@
 nugrid-wendocker
 ================
 
+Branch for WENDI dev server
+
 A number of Docker containers for exploring the stellar evolution, explosion and nucleosynthesis datasets that are produced by the NuGrid collaboration.
 
 ## wendocker1
