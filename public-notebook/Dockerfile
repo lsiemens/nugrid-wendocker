@@ -13,7 +13,8 @@ RUN apt-get update && \
     python-sklearn hdf5-tools libhdf5-serial-dev python-h5py python-tk \
     build-essential python-dev libsndfile1-dev libsndfile1 git wget \
     pandoc
-RUN apt-get --no-install-recommends install --yes libfreetype6-dev libpng3 
+RUN apt-get --no-install-recommends install --yes libfreetype6-dev libpng3 \
+    texlive-latex-base texlive-latex-extra texlive-fonts-recommended
 RUN pip install --upgrade matplotlib && \
     pip install scikits.audiolab && \
     pip install pygments && \
@@ -25,12 +26,12 @@ RUN pip install --upgrade matplotlib && \
     pip install https://github.com/jakevdp/JSAnimation/archive/master.zip && \
     pip install xlrd
 
-#RUN  pip install ipython==2.0.0 && \
 RUN  pip install ipython==3.1.0 && \
      pip install jsonschema && \
      pip install jinja2 && \
-     pip install tornado
-RUN  pip install --upgrade tornado
+     pip install tornado && \
+     pip install --upgrade tornado && \
+     pip install mistune 
 
 # set the lang to avoid issues
 RUN apt-get install -y language-pack-en
